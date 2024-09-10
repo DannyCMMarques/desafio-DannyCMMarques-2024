@@ -86,7 +86,7 @@ npm test
 
 ## 🎯 Minha Experiência
 
-Desenvolver este projeto foi uma experiência incrível! Pude aplicar diversas técnicas e lógicas de programação para solucionar o problema proposto. Estou muito animado para chance de participar do time da DB!
+Desenvolver este projeto foi uma experiência incrível! Pude aplicar diversas técnicas e lógicas de programação para solucionar o problema proposto. Estou muito animada para chance de participar do time da DB!
   
 
 
