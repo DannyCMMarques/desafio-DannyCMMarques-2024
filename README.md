@@ -1,10 +1,35 @@
-# RECINTOS DO ZOO
+# 🦁 Recintos do Zoo - Desafio Start DB
 
-## O DESAFIO
-Olá! Você foi contratado para ajudar na organização de um zoológico.
-Sua missão será construir a lógica para indicar os recintos onde novos animais se sintam confortáveis.
+Este projeto faz parte do **Desafio Start DB**, onde você deve criar uma lógica para alocar animais em recintos adequados no zoológico. Abaixo, estão as instruções para rodar o projeto e interagir com o sistema.
 
-### RECINTOS EXISTENTES
+## 🚀 Como Rodar o Projeto:
+
+1. Instale as dependências do projeto com o seguinte comando:
+
+```javascript
+npm install
+```
+2-Para iniciar o programa, execute o seguinte comando no terminal:
+
+```javascript
+node index.js
+```
+Isso iniciará o programa e você verá um prompt para inserir informações
+
+## 🧑‍💻 Interaja com o Sistema
+
+* Digite o **nome do animal** e pressione **Enter**.
+* Digite a **quantidade de animais** e pressione **Enter**.
+
+O sistema analisará os recintos e exibirá os resultados no terminal.
+
+   ![image](https://github.com/user-attachments/assets/d6b75894-52b3-44e3-bd94-371f9e3eb2b3)
+
+## 📋 O Desafio Start DB
+ Você pode ver mais sobre o desafio nesse link :
+🔗[Link para o Desafio Start DB](https://dev.azure.com/db-tecnologia/_git/StartDB2024)
+
+### 📊 Recintos Existentes
 
  O zoológico possui os seguintes recintos disponíveis.
 
@@ -16,7 +41,7 @@ Sua missão será construir a lógica para indicar os recintos onde novos animai
   | 4         | rio               |    8          |   vazio             |
   | 5         | savana            |    9          |  1 leão             |
 
-### ANIMAIS
+### 🦓 Animais
 
  O zoológico só está habilitado a tratar dos animais abaixo.
  A tabela mostra o espaço que cada indivíduo ocupa e em quais biomas se adapta.
@@ -30,7 +55,7 @@ Sua missão será construir a lógica para indicar os recintos onde novos animai
   | GAZELA     |   2     |  savana              |
   | HIPOPOTAMO |   4     |  savana ou rio       |
 
-### REGRAS PARA ENCONTRAR UM RECINTO
+### ⚖️ REGRAS PARA ENCONTRAR UM RECINTO
 
 1) Um animal se sente confortável se está num bioma adequado e com espaço suficiente para cada indivíduo
 2) Animais carnívoros devem habitar somente com a própria espécie
@@ -41,7 +66,7 @@ Sua missão será construir a lógica para indicar os recintos onde novos animai
 7) Não é possível separar os lotes de animais nem trocar os animais que já existem de recinto (eles são muito apegados!).
 Por exemplo, se chegar um lote de 12 macacos, não é possível colocar 6 em 2 recintos.
 
-### ENTRADAS E SAÍDAS
+### 🖥️ ENTRADAS E SAÍDAS
 
 1) O programa deve receber tipo e quantidade de animal (nessa ordem)
 2) O programa deve retornar uma estrutura contendo a lista de todos os recintos viáveis ordenada pelo número do recinto (caso existam) e a mensagem de erro (caso exista)
@@ -50,68 +75,18 @@ Por exemplo, se chegar um lote de 12 macacos, não é possível colocar 6 em 2 r
 5) Caso quantidade informada seja inválida, apresentar erro "Quantidade inválida"
 6) Caso não haja recinto possível, apresentar erro "Não há recinto viável"
 
-### EXEMPLOS
 
-Entrada para um caso válido
-```js
-"MACACO", 2
-```
-Saída
-```js
-{
-  recintosViaveis: ["Recinto 1 (espaço livre: 5 total: 10)",
-   "Recinto 2 (espaço livre: 3 total: 5)",
-   "Recinto 3 (espaço livre: 2 total: 7)"]
-}
-```
+## 🧪VALIDANDO A SOLUÇÃO
 
-Entrada para um caso inválido
-```js
-"UNICORNIO", 1
-```
-Saída
-```js
-{
-  erro: "Animal inválido"
-}
-```
-
-### O CÓDIGO
-Você está recebendo uma estrutura básica para desenvolver a lógica do desafio. O arquivo principal está localizado dentro da pasta `src` e se chama `recintos-zoo.js`. Você pode desenvolver a sua lógica criando outros arquivos, métodos e até mesmo outras classes, porém o resultado deve poder ser obtido através do método `analisaRecintos`.
-
-> **ALERTA**:
-> É importante que essa estrutura básica não seja alterada, pois as etapas automáticas da nossa validação dependem disso. Conseguir executar os passos descritos mais adiante na seção `VALIDANDO A SOLUÇÃO` também ajudará você a verificar que seu código segue a estrutura definida.
-
-Exemplo de chamada
-```js
-  new RecintosZoo().analisaRecintos('MACACO', 2);
-```
-
-### INSTALANDO E RODANDO NA SUA MÁQUINA
-1. Instalar o [Node](https://nodejs.org/en/)
-2. Instalar dependencias do projeto com o seguinte comando:
-```bash
-npm install
-```
-
-### VALIDANDO A SOLUÇÃO
-Junto com a estrutura básica você está recebendo alguns cenários de testes no arquivo `recintos-zoo.test.js` para auxiliar na validação da sua solução. Recomendamos que você crie mais casos de teste para aumentar a confiabilidade da sua solução.
-Para testar sua solução com os cenários existentes ou novos, rode o seguinte comando:
+Você pode rodar os testes com o seguinte comando:
 ```bash
 npm test
 ```
+![image](https://github.com/user-attachments/assets/71055a17-0e29-4446-b772-8a48143309d8)
 
-Para saber mais consulte a [Documentação do Jest](https://jestjs.io/pt-BR/docs/getting-started).
+## 🎯 Minha Experiência
 
-### VALIDANDO A ENTREGA
-Para garantir que seu desafio vai ser considerado entregue, revise os seguintes pontos:
-
-#### GIT
-O repositório deve ser **público** e ter o **nome** e **branch** indicados na seção `ENTREGANDO O DESAFIO`.
-
-
-
-#### CÓDIGO
-A solução deve ser entregue em **javascript** e a **estrutura de pastas e arquivos** deve seguir o indicado na seção `O CÓDIGO`.
+Desenvolver este projeto foi uma experiência incrível! Pude aplicar diversas técnicas e lógicas de programação para solucionar o problema proposto. Estou muito animado para chance de participar do time da DB!
+  
 
 
